@@ -1,0 +1,27 @@
+{
+  "name": "@dborisov/sinon-gc",
+  "version": "1.0.0",
+  "description": "Showcase to understand nuances on how sinonjs affects V8 GC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d-borisov/sinon-gc.git"
+  },
+  "keywords": [
+    "sinonjs",
+    "gc"
+  ],
+  "author": "d.borisov.mail@gmail.com",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/d-borisov/sinon-gc/issues"
+  },
+  "homepage": "https://github.com/d-borisov/sinon-gc#readme",
+  "scripts": {
+    "start": "node --expose-gc index.js",
+    "test": "node --inspect-brk --expose-gc --trace-gc index.js"
+  },
+  "dependencies": {
+    "sinon": "12.0.1"
+  }
+}
